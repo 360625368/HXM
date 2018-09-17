@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/hxm_padding_normal"
+    android:paddingRight="@dimen/hxm_padding_normal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="50dp">
+
+            <View
+                android:id="@+id/line_up"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/hxm_gray_light"/>
+
+            <View
+                android:id="@+id/circle"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:background="@drawable/hxm_shape_circle_yellow"/>
+            <View
+                android:id="@+id/line_down"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/hxm_gray_light"/>
+
+        </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/title"
+        tools:text="参会日期"
+        android:layout_marginLeft="@dimen/hxm_margin_normal"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/desc"
+        tools:text="2018-09-05"
+        android:textColor="@color/hxm_gray"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

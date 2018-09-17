@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv"
+            app:cardCornerRadius="@dimen/hxm_normal_radius"
+            android:layout_marginLeft="@dimen/hxm_margin_normal"
+            android:layout_marginRight="@dimen/hxm_margin_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/hxm_padding_normal"
+                    android:text="2018年02月"
+                    android:gravity="center"
+                    android:textColor="@color/hxm_black"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content" />
+                <com.haibin.calendarview.CalendarView
+                    android:id="@+id/calendar_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    app:calendar_height="40dp"
+                    app:calendar_padding="@dimen/hxm_padding_min"
+                    app:current_month_lunar_text_color="#CFCFCF"
+                    app:current_month_text_color="#333333"
+                    app:min_year="2004"
+                    app:month_view="huaxiaomi.pulan.com.widget.AttendanceMonthView"
+                    app:month_view_show_mode="mode_only_current"
+                    app:other_month_text_color="#e1e1e1"
+                    app:scheme_lunar_text_color="@color/hxm_black"
+                    app:scheme_text="假"
+                    app:scheme_text_color="@color/hxm_black"
+                    app:scheme_theme_color="#128c4b"
+                    app:selected_lunar_text_color="@color/hxm_white"
+                    app:selected_text_color="#fff"
+                    app:selected_theme_color="@color/hxm_schedule_status_today"
+                    app:week_background="#fff"
+                    app:day_text_size="@dimen/hxm_text_size_small"
+                    app:week_text_color="#111"
+                    app:week_view="huaxiaomi.pulan.com.widget.ColorfulWeekView"
+                    app:year_view_day_text_color="#333333"
+                    app:year_view_day_text_size="@dimen/hxm_text_size_small"
+                    app:year_view_month_text_color="@color/hxm_red"
+                    app:year_view_month_text_size="20sp"
+                    app:lunar_text_size="8sp"
+                    app:year_view_scheme_color="#f17706" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_below="@id/cv"
+            app:cardCornerRadius="@dimen/hxm_normal_radius"
+            android:layout_marginTop="@dimen/hxm_margin_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv"
+                android:overScrollMode="never"
+                tools:layoutManager="android.support.v7.widget.GridLayoutManager"
+                tools:spanCount="2"
+                tools:listitem="@layout/hxm_item_attendance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+</LinearLayout>

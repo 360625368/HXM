@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="TitlebarLayout">
+        <attr name="TitlebarLayout_title" format="string"/>
+        <attr name="TitlebarLayout_showMore" format="boolean"/>
+        <attr name="TitlebarLayout_showBack" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="RectHorizontalProgressBar">
+        <attr name="RectHorizontalProgressBar_Max" format="integer"/>
+        <attr name="RectHorizontalProgressBar_Progress" format="integer"/>
+        <attr name="RectHorizontalProgressBar_Color" format="color"/>
+        <attr name="RectHorizontalProgressBar_UncheckColor" format="color"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,43 @@
+<resources>
+    <string name="hxm_app_name">花小秘</string>
+    <string name="hxm_menu_daily_check">日常查询</string>
+    <string name="hxm_menu_setting">操作设定</string>
+    <string name="hxm_menu_skill">通用技能</string>
+    <string name="hxm_system_menu_person">个人中心</string>
+    <string name="hxm_system_menu_clear_conversation">清空会话中心</string>
+    <string name="hxm_back">返回</string>
+
+    <string name="hxm_daily_menu_salary">薪资查询</string>
+    <string name="hxm_daily_menu_attendance">考勤查询</string>
+    <string name="hxm_daily_menu_meeting">会议安排</string>
+    <string name="hxm_daily_menu_schedule">日程安排</string>
+    <string name="hxm_daily_menu_dealt">待办事项</string>
+    <string name="hxm_daily_menu_pending">待阅事项</string>
+    <string name="hxm_daily_menu_saturation">工作饱和度</string>
+    <string name="hxm_daily_menu_approval">我的审批</string>
+    <string name="hxm_daily_menu_task">工作任务</string>
+
+    <string name="hxm_title_daily">日常查询</string>
+    <string name="hxm_title_salary">@string/hxm_daily_menu_salary</string>
+    <string name="hxm_title_attendance">@string/hxm_daily_menu_attendance</string>
+    <string name="hxm_title_meeting">@string/hxm_daily_menu_meeting</string>
+    <string name="hxm_title_meeting_detail">会议详情</string>
+    <string name="hxm_title_schedule">@string/hxm_daily_menu_schedule</string>
+    <string name="hxm_title_dealt">@string/hxm_daily_menu_dealt</string>
+    <string name="hxm_title_dealt_detail">待办流程</string>
+    <string name="hxm_title_pending">@string/hxm_daily_menu_pending</string>
+    <string name="hxm_title_pending_detail">待阅详情</string>
+    <string name="hxm_title_saturation">@string/hxm_daily_menu_saturation</string>
+    <string name="hxm_title_approval">@string/hxm_daily_menu_approval</string>
+    <string name="hxm_title_approval_detail">审批流程</string>
+    <string name="hxm_title_task">@string/hxm_daily_menu_task</string>
+
+    <string name="hxm_year">年</string>
+    <string name="hxm_month">月</string>
+    <string name="hxm_today">今天</string>
+    <string name="hxm_finish">已完成</string>
+    <string name="hxm_no_finish">待完成</string>
+    <string name="hxm_loading_title">正在请求</string>
+    <string name="hxm_loading_message">请稍候...</string>
+
+</resources>

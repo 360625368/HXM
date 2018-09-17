@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hxm_white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <huaxiaomi.pulan.com.widget.TitlebarLayout
+        android:layout_width="match_parent"
+        app:TitlebarLayout_showBack="true"
+        app:TitlebarLayout_title="@string/hxm_title_schedule"
+        android:layout_height="wrap_content"/>
+
+    <huaxiaomi.pulan.com.widget.ScheduleLayout
+        android:id="@+id/schedule_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

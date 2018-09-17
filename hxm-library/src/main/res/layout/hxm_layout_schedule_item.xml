@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/hxm_padding_min"
+    android:gravity="center_vertical"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="100dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/time"
+            android:gravity="center"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            tools:text="09:50-12:30"
+            android:textSize="@dimen/hxm_text_size_small"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="@dimen/hxm_margin_min"
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            tools:text="未完成"
+            android:textSize="@dimen/hxm_text_size_min"
+            android:textColor="@color/hxm_white"
+            android:background="@color/hxm_schedule_status_no_finish"
+            android:padding="@dimen/hxm_padding_min"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginLeft="@dimen/hxm_margin_normal"
+        android:layout_marginRight="@dimen/hxm_margin_normal"
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@color/hxm_divide_color"/>
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:textSize="@dimen/hxm_text_size_small"
+        tools:text="09:50到三楼会议室开关于审批流程的会议"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

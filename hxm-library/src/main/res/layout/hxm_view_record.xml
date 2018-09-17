@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:padding="@dimen/hxm_padding_max"
+        android:layout_width="wrap_content"
+        android:background="@drawable/hxm_shape_record_bg"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/volume_content"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/microphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/hxm_speech"
+                />
+
+            <LinearLayout
+                android:gravity="bottom"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/hxm_margin_normal"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:paddingTop="@dimen/hxm_padding_min"
+                    android:scaleType="fitXY"
+                    android:id="@+id/voice"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/hxm_volume_1"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="@dimen/hxm_margin_normal"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/hxm_text_size_large"
+            android:textColor="@color/hxm_white"
+            android:text="松开发送"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <huaxiaomi.pulan.com.widget.TitlebarLayout
+        app:TitlebarLayout_title="@string/hxm_title_approval_detail"
+        app:TitlebarLayout_showBack="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/hxm_colorPrimary" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/hxm_margin_max"
+            android:layout_marginRight="@dimen/hxm_margin_max"
+            android:layout_marginTop="@dimen/hxm_margin_normal"
+            android:layout_marginBottom="@dimen/hxm_margin_normal"
+            app:cardCornerRadius="@dimen/hxm_normal_radius"
+            app:contentPadding="@dimen/hxm_padding_normal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/hxm_margin_normal"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="35dp"
+                        android:layout_height="35dp">
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/hxm_shape_circle_primary" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/circle_name"
+                            android:singleLine="true"
+                            android:layout_width="match_parent"
+                            android:gravity="center"
+                            tools:text="张三"
+                            android:textColor="@color/hxm_white"
+                            android:textSize="@dimen/hxm_text_size_small"
+                            android:layout_height="match_parent" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/hxm_margin_normal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/name"
+                            android:textColor="@color/hxm_black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:text="张三" />
+
+                        <TextView
+                            android:id="@+id/desc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/hxm_gray"
+                            android:textSize="@dimen/hxm_text_size_small"
+                            tools:text="待您审核" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <include layout="@layout/hxm_divide_line_thin" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/hxm_margin_normal"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minEms="6"
+                        android:textColor="@color/hxm_gray"
+                        android:textSize="@dimen/hxm_text_size_small"
+                        android:text="开始时间" />
+
+                    <TextView
+                        android:id="@+id/start_time"
+                        android:textColor="@color/hxm_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/hxm_margin_normal"
+                        android:textSize="@dimen/hxm_text_size_small"
+                        tools:text="2018-09-25 09:30" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/hxm_margin_normal"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minEms="6"
+                        android:textColor="@color/hxm_gray"
+                        android:textSize="@dimen/hxm_text_size_small"
+                        android:text="结束时间" />
+
+                    <TextView
+                        android:id="@+id/end_time"
+                        android:textColor="@color/hxm_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/hxm_margin_normal"
+                        android:textSize="@dimen/hxm_text_size_small"
+                        tools:text="2018-09-25 09:30" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/hxm_margin_normal"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minEms="6"
+                        android:textColor="@color/hxm_gray"
+                        android:textSize="@dimen/hxm_text_size_small"
+                        android:text="时长(小时)" />
+
+                    <TextView
+                        android:id="@+id/duration"
+                        android:textColor="@color/hxm_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/hxm_margin_normal"
+                        android:textSize="@dimen/hxm_text_size_small"
+                        tools:text="3" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/hxm_margin_normal"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/content_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minEms="6"
+                        android:textColor="@color/hxm_gray"
+                        android:textSize="@dimen/hxm_text_size_small"
+                        android:text="流程主题" />
+
+                    <TextView
+                        android:id="@+id/content"
+                        android:textColor="@color/hxm_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/hxm_margin_normal"
+                        android:textSize="@dimen/hxm_text_size_small"
+                        tools:text="有事" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/hxm_margin_max"
+        android:layout_marginRight="@dimen/hxm_margin_max"
+        android:layout_marginTop="@dimen/hxm_margin_normal"
+        android:layout_marginBottom="@dimen/hxm_margin_normal"
+        app:cardCornerRadius="@dimen/hxm_normal_radius"
+        app:contentPadding="@dimen/hxm_padding_normal">
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:layout_width="match_parent"
+            app:srlEnablePureScrollMode="true"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv"
+                android:overScrollMode="never"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                tools:listitem="@layout/hxm_item_approval_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

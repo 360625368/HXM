@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hxm_white"
+    android:orientation="vertical">
+
+    <huaxiaomi.pulan.com.widget.TitlebarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:TitlebarLayout_showBack="true"
+        app:TitlebarLayout_title="@string/hxm_title_saturation" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/hxm_colorPrimary" />
+
+        <huaxiaomi.pulan.com.widget.SaturationLayout
+            android:id="@+id/saturation_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

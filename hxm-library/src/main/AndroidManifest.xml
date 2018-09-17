@@ -1,0 +1,42 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="huaxiaomi.pulan.com" >
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <application
+        >
+        <!--<meta-data android:name="com.baidu.speech.APP_ID"-->
+            <!--android:value="11804077" />-->
+        <!--<meta-data-->
+            <!--android:name="com.baidu.speech.API_KEY"-->
+            <!--android:value="ddxHycIhVO0MEmViwMo30zc0" />-->
+        <!--<meta-data-->
+            <!--android:name="com.baidu.speech.SECRET_KEY"-->
+            <!--android:value="Cc8iQuhoKCVPOQetxVbgTh5loRcbc22N" />-->
+
+        <activity android:name=".activity.MainActivity"/>
+        <activity android:name="huaxiaomi.pulan.com.activity.DailyActivity"/>
+
+        <activity android:name=".activity.AttendanceActivity"/>
+        <activity android:name=".activity.MeetingActivity"/>
+        <activity android:name=".activity.ApprovalActivity"/>
+        <activity android:name=".activity.DealtActivity" />
+        <activity android:name=".activity.PendingActivity" />
+        <activity android:name=".activity.SaturationActivity" />
+        <activity android:name=".activity.MeetingDetailActivity" />
+        <activity android:name=".activity.ScheduleAcitivty" />
+        <activity android:name=".activity.DealtDetailActivity" />
+        <activity android:name=".activity.PendingDetailActivity" />
+        <activity android:name=".activity.ApprovalDetailActivity" />
+        <activity android:name=".activity.SalaryActivity" />
+
+
+
+
+        <service android:name="com.baidu.speech.VoiceRecognitionService" android:exported="false" />
+    </application>
+</manifest>

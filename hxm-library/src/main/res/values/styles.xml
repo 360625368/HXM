@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="hxm_AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/hxm_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/hxm_colorPrimaryDark</item>
+        <item name="colorAccent">@color/hxm_colorAccent</item>
+
+        <item name="android:textSize">@dimen/hxm_text_size_normal</item>
+
+        <item name="android:windowTranslucentStatus">true</item>
+
+    </style>
+
+    <style name="hxm_Dialog" parent="ThemeOverlay.AppCompat.Dialog">
+        <item name="android:windowBackground">@color/hxm_transparent</item>
+    </style>
+
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_margin="20dp"
+        android:background="@color/hxm_white"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="@dimen/hxm_normal_radius"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="@dimen/hxm_padding_normal"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <EditText
+                android:id="@+id/et"
+                android:layout_marginTop="@dimen/hxm_margin_normal"
+                android:layout_width="match_parent"
+                android:padding="@dimen/hxm_padding_normal"
+                android:hint="回复"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/send"
+                android:layout_marginTop="@dimen/hxm_margin_normal"
+                android:text="发送"
+                android:textColor="@color/hxm_white"
+                android:layout_width="match_parent"
+                android:background="@drawable/hxm_shape_normal_radius_fill_primary"
+                android:layout_height="30dp" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

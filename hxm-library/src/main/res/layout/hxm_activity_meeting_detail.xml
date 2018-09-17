@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <huaxiaomi.pulan.com.widget.TitlebarLayout
+        android:layout_width="match_parent"
+        app:TitlebarLayout_title="@string/hxm_title_meeting_detail"
+        app:TitlebarLayout_showBack="true"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/hxm_colorPrimary"/>
+
+        <android.support.v7.widget.CardView
+            android:layout_marginTop="@dimen/hxm_margin_normal"
+            android:layout_marginLeft="@dimen/hxm_margin_max"
+            android:layout_marginRight="@dimen/hxm_margin_max"
+            app:cardCornerRadius="@dimen/hxm_normal_radius"
+            app:contentPadding="@dimen/hxm_padding_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/hxm_margin_max">
+            <com.scwang.smartrefresh.layout.SmartRefreshLayout
+                android:layout_width="match_parent"
+                app:srlEnablePureScrollMode="true"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv"
+                    android:overScrollMode="never"
+                    app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                    tools:listitem="@layout/hxm_item_meeting_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+</LinearLayout>

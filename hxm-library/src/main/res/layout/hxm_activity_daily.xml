@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hxm_white"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <huaxiaomi.pulan.com.widget.TitlebarLayout
+        app:TitlebarLayout_showBack="true"
+        app:TitlebarLayout_title="@string/hxm_title_daily"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv"
+            android:overScrollMode="never"
+            android:layout_centerInParent="true"
+            tools:layoutManager="android.support.v7.widget.GridLayoutManager"
+            tools:spanCount="3"
+            tools:listitem="@layout/hxm_item_daily_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.v7.widget.CardView
+        android:layout_margin="@dimen/hxm_margin_normal"
+        android:layout_width="match_parent"
+        app:contentPadding="@dimen/hxm_padding_normal"
+        app:cardCornerRadius="@dimen/hxm_normal_radius"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@mipmap/hxm_dealt"
+                android:layout_width="32dp"
+                android:layout_height="32dp" />
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/hxm_margin_normal"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:singleLine="true"
+                        android:id="@+id/title"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        tools:text="加班申请"
+                        android:textColor="@color/hxm_black"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/time"
+                        tools:text="09-13 04:00"
+                        android:textSize="@dimen/hxm_text_size_small"
+                        android:textColor="@color/hxm_gray"
+                        android:layout_width="wrap_content"
+                        android:gravity="right"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+                <TextView
+                    android:singleLine="true"
+                    android:id="@+id/content"
+                    android:layout_marginTop="@dimen/hxm_margin_min"
+                    android:layout_width="match_parent"
+                    tools:text="张三提交了加班申请，请您审核！"
+                    android:textSize="@dimen/hxm_text_size_small"
+                    android:textColor="@color/hxm_gray"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

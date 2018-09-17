@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/hxm_padding_min"
+    android:paddingRight="@dimen/hxm_padding_min"
+    android:paddingBottom="@dimen/hxm_padding_min"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <View
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/hxm_shape_circle_primary" />
+
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:background="@color/hxm_divide_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:clipChildren="false"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_marginLeft="@dimen/hxm_margin_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/hxm_black"
+            android:text="我 发起申请" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_marginLeft="@dimen/hxm_margin_normal"
+            android:layout_width="0dp"
+            android:text="已同意"
+            android:textColor="@color/hxm_green"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:text="09-02 08:20"
+            android:textSize="@dimen/hxm_text_size_small"
+            android:textColor="@color/hxm_gray"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

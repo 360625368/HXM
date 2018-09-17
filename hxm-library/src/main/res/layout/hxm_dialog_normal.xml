@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_margin="@dimen/hxm_margin_max"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="@dimen/hxm_normal_radius"
+        android:layout_height="wrap_content">
+        
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@mipmap/hxm_blue"
+                    android:scaleType="fitXY"
+                    android:layout_width="match_parent"
+                    android:layout_height="113dp" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv"
+                tools:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                tools:listitem="@layout/hxm_item_normal_dialog"
+                android:overScrollMode="never"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"/>
+
+            <include layout="@layout/hxm_divide_line_thin"/>
+
+            <Button
+                android:id="@+id/confirm"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="143dp"
+                android:text="确定"
+                android:textColor="@color/hxm_white"
+                android:background="@drawable/hxm_shape_normal_radius_fill_primary"
+                android:layout_height="30dp" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

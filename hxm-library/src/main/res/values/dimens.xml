@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="hxm_title_bar_height">50dp</dimen>
+
+    <dimen name="hxm_status_bar_height">25dp</dimen>
+
+    <dimen name="hxm_padding_min">4dp</dimen>
+    <dimen name="hxm_padding_normal">8dp</dimen>
+    <dimen name="hxm_padding_max">16dp</dimen>
+
+    <dimen name="hxm_margin_min">4dp</dimen>
+    <dimen name="hxm_margin_normal">8dp</dimen>
+    <dimen name="hxm_margin_max">30dp</dimen>
+
+    <dimen name="hxm_normal_radius">4dp</dimen>
+
+    <dimen name="hxm_text_size_min">10sp</dimen>
+    <dimen name="hxm_text_size_small">12sp</dimen>
+    <dimen name="hxm_text_size_normal">14sp</dimen>
+    <dimen name="hxm_text_size_large">18sp</dimen>
+    <dimen name="hxm_text_size_max">20sp</dimen>
+
+    <dimen name="hxm_elevation_normal">2dp</dimen>
+    <dimen name="hxm_translationZ_normal">0dp</dimen>
+
+    <dimen name="hxm_text_size_title">@dimen/hxm_text_size_large</dimen>
+</resources>

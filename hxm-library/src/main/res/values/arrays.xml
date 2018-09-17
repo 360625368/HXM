@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="hxm_menus_daily_check">
+        <item>薪资查询</item>
+        <item>考勤查询</item>
+        <item>会议安排</item>
+        <item>日程安排</item>
+        <item>待办事项</item>
+        <item>待阅事项</item>
+        <item>工作饱和度</item>
+        <item>我的审批</item>
+        <item>工作任务</item>
+    </string-array>
+
+    <integer-array name="hxm_menus_daily_check_data">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </integer-array>
+
+    <string-array name="hxm_menus_setting">
+        <item>打电话</item>
+        <item>预订会议室</item>
+        <item>发邮件</item>
+        <item>设定流程</item>
+        <item>提交审批</item>
+        <item>审核审批</item>
+    </string-array>
+
+    <string-array name="hxm_menus_skill">
+        <item>天气</item>
+        <item>讲个笑话</item>
+        <item>讲个故事</item>
+        <item>深圳股价</item>
+        <item>新闻</item>
+        <item>查一下快递</item>
+        <item>酒店</item>
+        <item>航班</item>
+        <item>列车</item>
+    </string-array>
+</resources>

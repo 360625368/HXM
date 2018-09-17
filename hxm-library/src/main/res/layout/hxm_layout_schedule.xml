@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:background="@color/hxm_white"
+        android:padding="@dimen/hxm_padding_normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:padding="@dimen/hxm_padding_min"
+                android:background="@drawable/hxm_shape_rect_frame_gray_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/year"
+                    android:layout_width="wrap_content"
+                    tools:text="2018"
+                    android:textSize="@dimen/hxm_text_size_small"
+                    android:textColor="@color/hxm_black"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginLeft="@dimen/hxm_margin_max"
+                    android:textSize="@dimen/hxm_text_size_small"
+                    android:layout_width="wrap_content"
+                    android:text="@string/hxm_year"
+                    android:textColor="@color/hxm_gray"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/hxm_margin_normal"
+                android:padding="@dimen/hxm_padding_min"
+                android:background="@drawable/hxm_shape_rect_frame_gray_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/month"
+                    android:layout_width="wrap_content"
+                    tools:text="3"
+                    android:minEms="1"
+                    android:textSize="@dimen/hxm_text_size_small"
+                    android:textColor="@color/hxm_black"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/hxm_gray"
+                    android:layout_marginLeft="@dimen/hxm_margin_max"
+                    android:textSize="@dimen/hxm_text_size_small"
+                    android:layout_width="wrap_content"
+                    android:text="@string/hxm_month"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/today"
+            android:layout_width="wrap_content"
+            android:text="@string/hxm_today"
+            android:textSize="@dimen/hxm_text_size_small"
+            android:padding="@dimen/hxm_padding_min"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/hxm_white"
+            android:background="@color/hxm_schedule_status_today"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <com.haibin.calendarview.CalendarView
+        android:translationZ="@dimen/hxm_translationZ_normal"
+        android:elevation="@dimen/hxm_elevation_normal"
+        android:id="@+id/calendar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        app:calendar_height="40dp"
+        app:calendar_padding="@dimen/hxm_padding_min"
+        app:current_month_lunar_text_color="#CFCFCF"
+        app:current_month_text_color="#333333"
+        app:min_year="2004"
+        app:month_view="huaxiaomi.pulan.com.widget.ScheduleMonthView"
+        app:month_view_show_mode="mode_only_current"
+        app:other_month_text_color="#e1e1e1"
+        app:scheme_lunar_text_color="#ffffff"
+        app:scheme_text="假"
+        app:scheme_text_color="#fff"
+        app:scheme_theme_color="#128c4b"
+        app:selected_lunar_text_color="#fff"
+        app:selected_text_color="#fff"
+        app:selected_theme_color="@color/hxm_schedule_status_today"
+        app:week_background="#fff"
+        app:day_text_size="@dimen/hxm_text_size_small"
+        app:week_text_color="#111"
+        app:week_view="huaxiaomi.pulan.com.widget.ColorfulWeekView"
+        app:year_view_day_text_color="#333333"
+        app:year_view_day_text_size="9sp"
+        app:year_view_month_text_color="#ff0000"
+        app:year_view_month_text_size="20sp"
+        app:year_view_scheme_color="#f17706" />
+
+    <LinearLayout
+        android:elevation="@dimen/hxm_elevation_normal"
+        android:translationZ="@dimen/hxm_translationZ_normal"
+        android:layout_marginBottom="@dimen/hxm_margin_normal"
+        android:background="@color/hxm_white"
+        android:gravity="center_vertical"
+        android:padding="@dimen/hxm_padding_normal"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="18dp"
+            android:background="@color/hxm_schedule_status_today"
+            android:layout_height="11dp"/>
+
+        <TextView
+            android:layout_marginLeft="@dimen/hxm_margin_normal"
+            android:layout_width="wrap_content"
+            android:text="@string/hxm_today"
+            android:textSize="@dimen/hxm_text_size_small"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_marginLeft="@dimen/hxm_margin_max"
+            android:layout_width="18dp"
+            android:background="@color/hxm_schedule_status_finish"
+            android:layout_height="11dp"/>
+
+        <TextView
+            android:layout_marginLeft="@dimen/hxm_margin_normal"
+            android:layout_width="wrap_content"
+            android:text="@string/hxm_finish"
+            android:textSize="@dimen/hxm_text_size_small"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_marginLeft="@dimen/hxm_margin_max"
+            android:layout_width="18dp"
+            android:background="@color/hxm_schedule_status_no_finish"
+            android:layout_height="11dp"/>
+
+        <TextView
+            android:layout_marginLeft="@dimen/hxm_margin_normal"
+            android:layout_width="wrap_content"
+            android:text="@string/hxm_no_finish"
+            android:textSize="@dimen/hxm_text_size_small"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/rv"
+        android:overScrollMode="never"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        tools:listitem="@layout/hxm_layout_schedule_item"
+        android:layout_weight="1"/>
+
+</LinearLayout>

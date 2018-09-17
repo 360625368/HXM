@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="hxm_colorPrimary">@color/hxm_blue</color>
+    <color name="hxm_colorPrimaryDark">@color/hxm_blue_dark</color>
+    <color name="hxm_colorAccent">#FF4081</color>
+
+    <color name="hxm_transparent">@android:color/transparent</color>
+
+    <color name="hxm_black">#000000</color>
+    <color name="hxm_blue">#219CEA</color>
+    <color name="hxm_blue_dark">#2096E1</color>
+
+    <color name="hxm_white">#ffffff</color>
+    <color name="hxm_divide_color">#dcdcdc</color>
+
+    <color name="hxm_gray_light">#ECECEC</color>
+    <color name="hxm_gray">#B2B2B2</color>
+
+    <color name="hxm_green">#60CD21</color>
+
+    <color name="hxm_orange">#FF933D</color>
+
+
+    <color name="hxm_yellow">#FFAE00</color>
+
+
+    <color name="hxm_schedule_status_today">#F9D974</color>
+    <color name="hxm_schedule_status_no_finish">#59BECC</color>
+    <color name="hxm_schedule_status_finish">#78D08B</color>
+    <color name="hxm_red">#D71618</color>
+</resources>
