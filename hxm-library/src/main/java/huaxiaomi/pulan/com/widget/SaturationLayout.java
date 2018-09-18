@@ -139,6 +139,15 @@ public class SaturationLayout extends LinearLayout {
         }
         this.saturation = saturation;
 
+        try{
+            int year = NumberUtils.toInt(saturation.getSat_date().split("-")[0],2018);
+            int month = NumberUtils.toInt(saturation.getSat_date().split("-")[1],1);
+            int day = NumberUtils.toInt(saturation.getSat_date().split("-")[2],1);
+            calendarView.scrollToCalendar(year,month,day,true);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
         datas.clear();
         datas.add(buildeItem("考勤天数",saturation.getMon_kaoqin_days(), NumberUtils.toFloat(saturation.getMon_kaoqin_days(),0)));
         datas.add(buildeItem("会议时间(小时)",saturation.getMon_meeting_times(), NumberUtils.toFloat(saturation.getMon_meeting_times(),0)));

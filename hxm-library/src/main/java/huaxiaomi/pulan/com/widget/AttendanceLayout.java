@@ -94,13 +94,13 @@ public class AttendanceLayout extends LinearLayout {
                 }
                 String date = calendar.getYear() + "-" + calendar.getMonth() + "-" + calendar.getDay();
                 AttendanceMonthView.clickDate = date;
-                dailyModel.getAttendance(date, new DefaultNetCallBack<MsgRespond<Attendance>>() {
-                    @Override
-                    public void onSuccess(MsgRespond<Attendance> result) {
-                        super.onSuccess(result);
-                        setAttendance(result.getResp());
-                    }
-                });
+//                dailyModel.getAttendance(date, new DefaultNetCallBack<MsgRespond<Attendance>>() {
+//                    @Override
+//                    public void onSuccess(MsgRespond<Attendance> result) {
+//                        super.onSuccess(result);
+//                        setAttendance(result.getResp());
+//                    }
+//                });
             }
         });
 
@@ -132,6 +132,15 @@ public class AttendanceLayout extends LinearLayout {
         }
 
         this.attendance = attendance;
+
+        try{
+            int year = NumberUtils.toInt(attendance.getDate().split("-")[0],2018);
+            int month = NumberUtils.toInt(attendance.getDate().split("-")[1],1);
+            int day = NumberUtils.toInt(attendance.getDate().split("-")[1],1);
+            calendarView.scrollToCalendar(year,month,0,true);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
 
         datas.clear();
         datas.add(buildeItem("未打卡次数",
